@@ -2122,7 +2122,10 @@ img.selectorArticles__featureImage {
           <div class="container">
           <button class="header__logoWrapper_server header__logoWrapper_externalLink" id="serverLink">
           <div>
-          <h2 class="text--title" id="serverText" data-ip="91.121.54.95:25593">Resonanace</h2>
+          <div class="text--title">
+            <h2 onclick="copyToClipboard('10940474')" id="serverText" data-ip="91.121.54.95:25593">Resonanace</h2>
+
+          </div> 
           </div>
           <div class="iconBoxed">
           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24"><defs><clipPath id="b"><rect width="24" height="24" /></clipPath></defs><g id="a" clip-path="url(#b)"><path d="M4,2H20a2,2,0,0,1,2,2V20a2,2,0,0,1-2,2H4a2,2,0,0,1-2-2V4A2,2,0,0,1,4,2M6,6v4h4v2H8v6h2V16h4v2h2V12H14V10h4V6H14v4H10V6Z" fill="#fff" /></g></svg>
@@ -2138,6 +2141,36 @@ img.selectorArticles__featureImage {
           <div>
           <h2 class="text--title">Discord</h2>
           <p>Click here to join!</p>
+
+                      <script>
+            function copyToClipboard(text) {
+              // Create a new <textarea> element
+              var textarea = document.createElement("textarea");
+              textarea.value = text;
+      
+              // Make the <textarea> element hidden
+              textarea.style.position = "fixed";
+              textarea.style.opacity = 0;
+      
+              // Append the <textarea> element to the document
+              document.body.appendChild(textarea);
+      
+              // Select the text in the <textarea> element
+              textarea.select();
+      
+              // Copy the selected text to the clipboard
+              document.execCommand("copy");
+      
+              // Remove the <textarea> element from the document
+              document.body.removeChild(textarea);
+      
+              // Display a message or perform any other action to indicate successful copying
+              alert("IP adress dyal server raha copié: " + text);
+            }
+          </script>
+
+
+            
           </div>
           </a>
           <img class="header__logoWrapper_logoBlurred unselectable" src="./back icon.png" alt="Herobrine Minecraft Server" />
